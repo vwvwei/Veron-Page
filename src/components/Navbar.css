@@ -1,0 +1,91 @@
+:root {
+  --rail: 88px;
+}
+
+/* Rail */
+.rail {
+  position: fixed;
+  inset: 0 auto 0 0;
+  width: var(--rail);
+  background: linear-gradient(to bottom, #f15a24, #fbb03b);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  z-index: 100;
+  color: #fff;
+}
+
+/* Floating button */
+.fab {
+  appearance: none;
+  border: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+.fab:hover {
+  background: rgba(255, 255, 255, 0.26);
+}
+.fab.open {
+  transform: rotate(180deg);
+}
+
+/* Vertical label */
+.rail-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  user-select: none;
+}
+
+/* Backdrop (only exists when menu is open) */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.06);
+  z-index: 90;
+  backdrop-filter: blur(2px);
+}
+
+/* Drawer */
+.drawer {
+  position: fixed;
+  top: 0;
+  left: var(--rail);
+  height: 100vh;
+  width: 280px;
+  background: linear-gradient(to bottom, #f15a24, #fbb03b);
+  color: #fff;
+  z-index: 95;
+  transform: translateX(-100%);
+  transition: transform 0.22s ease;
+}
+.drawer.open {
+  transform: translateX(0);
+}
+
+/* Drawer nav links */
+.drawer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 24px 18px;
+}
+.drawer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 10px 2px;
+}

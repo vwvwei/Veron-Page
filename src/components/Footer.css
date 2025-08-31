@@ -1,0 +1,30 @@
+/* Keep the footer inside the page flow; no fixed positioning */
+.site-footer {
+  margin: 48px 0 24px;
+  background: transparent; /* remove big background band */
+}
+
+/* Thin gradient strip (like your theme) */
+.footer-accent {
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(to right, #f15a24, #fbb03b);
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+/* Centered text, aligned like the rest of the site */
+.footer-inner {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 40px; /* same L/R gutter as Home/About */
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Optional: a subtle top border instead of the accent bar
+.footer-accent { display: none; }
+.footer-inner { border-top: 1px solid rgba(0,0,0,.08); padding-top: 16px; }
+*/

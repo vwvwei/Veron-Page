@@ -1,0 +1,93 @@
+/* src/pages/ArtsPage.css */
+
+.artpage.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px 48px;
+}
+
+/* centered title */
+.art-title {
+  text-align: center;
+  font-size: 28px;
+  margin: 12px 0 20px;
+}
+
+/* vertical gallery of images */
+.art-gallery {
+  display: grid;
+  gap: 24px;
+}
+
+/* image frame */
+.art-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  background: #eee;
+  transition: transform 0.3s ease;
+}
+.art-frame img:hover {
+  transform: scale(1.03);
+}
+
+/* quoted/italic description */
+.art-desc {
+  margin: 20px 0;
+  color: #333;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* prev/next */
+.art-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0 8px;
+}
+.art-nav a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 165, 0, 0.5);
+  color: #f15a24; /* orange */
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
+}
+.art-nav a:hover {
+  color: #ff7e3d;
+}
+
+/* back home */
+.back-home {
+  margin: 12px 0 18px;
+  text-align: center;
+}
+.back-home a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 165, 0, 0.5);
+  color: #f15a24; /* orange */
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
+}
+.back-home a:hover {
+  color: #ff7e3d;
+}
+
+/* not found page */
+.artpage.container.notfound {
+  text-align: center;
+  padding: 60px 20px;
+}
+.artpage.container.notfound h1 {
+  margin-bottom: 12px;
+}
+
+/* small screens */
+@media (max-width: 600px) {
+  .artpage.container {
+    padding: 0 16px 40px;
+  }
+}

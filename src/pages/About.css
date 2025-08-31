@@ -1,0 +1,68 @@
+/* src/pages/About.css */
+
+.about {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-accent {
+  width: 60px;
+  height: 4px;
+  margin: 0 auto 24px;
+  background: linear-gradient(to right, #f15a24, #fbb03b);
+  border-radius: 2px;
+}
+
+.about-portrait {
+  width: 220px;
+  height: auto;
+  border-radius: 6px;
+  margin: 0 auto 24px;
+  display: block;
+}
+
+.about-title {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.about-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  color: #666;
+}
+
+.about-text p {
+  margin: 12px 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-quote {
+  margin: 24px 0;
+  font-size: 16px;
+  font-style: italic;
+  color: #555;
+}
+
+.about-contact,
+.about-links {
+  margin-top: 20px;
+}
+
+.about-contact a,
+.about-links a {
+  color: #f15a24; /* orange links */
+  text-decoration: none;
+  border-bottom: 1px solid rgba(241, 90, 36, 0.4);
+  padding-bottom: 2px;
+  transition: color 0.2s ease;
+}
+
+.about-contact a:hover,
+.about-links a:hover {
+  color: #ff7e3d; /* lighter orange on hover */
+}

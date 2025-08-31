@@ -1,0 +1,36 @@
+/* Header that sits at the top of the document and scrolls away */
+.site-header {
+  position: relative; /* was fixed */
+  top: auto;
+  left: auto;
+  right: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px 0; /* space around the logo */
+  background: transparent;
+  z-index: 1; /* normal stacking */
+}
+
+/* clickable logo */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.brand img {
+  height: 56px; /* adjust as you like */
+  width: auto;
+  display: block;
+}
+
+/* Smaller on phones */
+@media (max-width: 600px) {
+  .brand img {
+    height: 42px;
+  }
+}
